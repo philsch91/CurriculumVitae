@@ -1,0 +1,17 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{KLW{\etalchar{+}}06}
+
+\bibitem[HMV04]{Hankerson2004}
+Darrel Hankerson, Alfred Menezes, and Scott Vanstone.
+\newblock {\em {G}uide to {E}lliptic {C}urve {C}ryptography}.
+\newblock Springer Professional Computing. Springer-Verlag New York, 2004.
+
+\bibitem[KLW{\etalchar{+}}06]{Koschuch2006}
+Manuel Koschuch, Joachim Lechner, Andreas Weitzer, Johann Gro{\ss}sch{\"a}dl,
+  Alexander Szekely, Stefan Tillich, and Johannes Wolkerstorfer.
+\newblock {H}ardware/{S}oftware {C}o-{D}esign of {E}lliptic {C}urve
+  {C}ryptography on an 8051 {M}icrocontroller.
+\newblock In {\em L. Goubin and M. Matsui (Eds.): CHES 2006}, pages 430--444,
+  2006.
+
+\end{thebibliography}

@@ -1,0 +1,201 @@
+%----------------------------------------------------------------
+%
+%  File    :  curriculumvitae.tex
+%
+%  Authors :  Keith Andrews, IICM, TU Graz, Austria
+%             Manuel Koschuch, FH Campus Wien, Austria
+% 
+%  Created :  22 Feb 96
+% 
+%  Changed :  07 Sept. 2017
+% 
+%----------------------------------------------------------------
+
+% Please send any questions, comments, remarks or complaints to
+% manuel.koschuch@fh-campuswien.ac.at
+
+
+% --- General Setup ---------------------------------------------
+
+\documentclass[11pt,a4paper,oneside]{scrbook}
+
+% select correct document language here
+\usepackage[ngerman]{babel}
+%\usepackage[english]{babel}
+
+% for nicer PDF rendering. Alternatively, when using MikTeX,
+% you could also manually install the cm-super package  
+\usepackage{lmodern}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% want Arial? uncomment next two lines...
+%\usepackage{uarial}
+\usepackage{}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+
+\usepackage[bf,sf]{subfigure}
+\renewcommand{\subfigtopskip}{0mm}
+\renewcommand{\subfigcapmargin}{0mm}
+
+% --- General Packages ----------
+
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{geometry} % define pagesize in more detail
+%\usepackage{fancyhdr} % nicer headers and footers	%commented
+\usepackage{colortbl} % define colored backgrounds for tables
+\usepackage{courier} %for listings
+\usepackage{listings} % nicer code formatting
+\lstset{basicstyle=\ttfamily,breaklines=true}
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf,.jpg,.png}
+\pdfcompresslevel=9
+\pdfpageheight=297mm
+\pdfpagewidth=210mm
+\usepackage[         % hyperref should be last package loaded
+    pdftex,
+    bookmarks,
+    bookmarksnumbered,
+    linktocpage,
+    pagebackref,
+    pdfview={Fit},
+    pdfstartview={Fit},
+    pdfpagemode=UseOutlines,                 % open bookmarks in Acrobat
+  ]{hyperref}
+\usepackage{bookmark}
+\usepackage{lastpage}
+
+%\KOMAoptions{headsepline=true}
+%\AddToLayerPageStyleOptions{scrheadings}
+%{oninit={% will be excecuted whenever the output of the layers is initialized
+    %\ifstr{\headmark}{}{\KOMAoptions{headsepline=false}}{}%
+%}}
+
+\geometry{a4paper,left=30mm,right=25mm, top=30mm, bottom=30mm}
+
+\setlength{\parskip}{3pt plus 1pt minus 0pt}       % vert. space before a paragraph
+%\setlength\leftmargini{0em}
+%\setlength\LTleft{0pt}
+%\setlength\LTright{0pt}
+
+\setcounter{tocdepth}{1}        % lowest section level entered in ToC
+\setcounter{secnumdepth}{2}     % lowest section level still numbered
+
+%---
+%\usepackage{scrlayer-scrpage}
+\usepackage[automark]{scrlayer-scrpage}% sets pagestyle scrheadings automatically
+\setkomafont{pageheadfoot}{\normalfont\normalcolor}
+\clearscrheadfoot	%deprecated
+\clearpairofpagestyles
+\ohead{}
+\ohead{Lebenslauf Philipp Schunker}
+\ofoot{\pagemark/\pageref*{LastPage}}
+%---
+
+% --- Custom Packages ----------
+
+\usepackage{verbatim}
+\usepackage[export]{adjustbox}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{etoolbox}
+\usepackage{hyperref}
+
+%\definecolor{tableHeader}{RGB}{211, 47, 47}
+\definecolor{tableHeader}{RGB}{0, 122, 255}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{224, 224, 224}
+
+\newcommand{\tableHeaderStyle}{
+    \rowfont{\leavevmode\color{white}\bfseries}
+    \rowcolor{tableHeader}
+    \setlength{\tabcolsep}{0pt}
+    \renewcommand{\arraystretch}{0}
+}
+
+% --- \textbullet\ text ----------
+
+\newlength\boxwid%  
+\let\oldtextbullet=\textbullet
+\def\textbullet{%
+    \settowidth{\boxwid}{\indent\oldtextbullet\ }%
+    \hangindent=\boxwid%
+    \oldtextbullet}
+    
+% --- \tabitem text ----------
+
+%\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\newcommand{\tabitem}{{\textbullet}~}
+
+\begin{comment}
+\setlist[tabitem]{nosep,
+        topsep= 0pt,
+        partopsep=0pt,
+        leftmargin= *,
+        label=\textbullet,
+        before=\vspace{-0.6\baselineskip},
+	after=\vspace{-\baselineskip}
+}
+\end{comment}
+
+% --- \hangbullet{text} ----------
+
+\newcommand\hangbullet[1]{\leftskip1.5\parindent
+\hspace*{-\parindent}\llap{{\textbullet\enspace}}#1\par\leftskip0pt}
+%\hspace*{-\parindent}\leavevmode\llap{{\textbullet\enspace}}#1\par\leftskip0pt}
+
+% --- Longtabu Settings ----------
+
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^0.5mm_0.3mm
+\everyrow{\tabucline[.05mm white]{\dimexpr\tabcolsep+0.1pt\relax}}
+
+\AtBeginEnvironment{tabu}{\setlist[itemize]{wide = 0pt, nosep, leftmargin = *}}
+
+\makeatletter
+\newcommand*{\compress}{\@minipagetrue}
+\makeatother
+
+% --- Start of Document ----------------------------------------
+
+
+\begin{document}
+
+%\frontmatter
+%\normalsize
+%\pagestyle{empty}            % for title pages
+
+% include correct title, depending on language
+%\pagestyle{fancy}
+%\fancyhead{}		%commented
+%\fancyfoot{}	%page numbering in lower right corner
+\setlength{\headheight}{15pt}
+%\renewcommand{\headrulewidth}{0.0pt}		%commented
+%\fancyfoot[R]{\thepage}
+%\pagenumbering{roman}        % for preliminary pages
+
+\mainmatter
+
+\cleardoublepage
+%\renewcommand{\headrulewidth}{0.4pt}		%commented
+%\pagestyle{fancy}            % for main pages	%commented
+\pagestyle{scrheadings}
+%\fancyhead[RO]{\slshape \nouppercase{\leftmark}}
+%\fancyfoot[R]{\thepage}
+%\pagenumbering{arabic}      % for main pages
+
+%--- Include your chapters here ----------
+
+\include{chapter1}          % Introduction
+
+\include{indices}
+
+\end{document}
+
