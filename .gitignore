@@ -1,4 +1,11 @@
 #.gitignore
 
+#ignore directories
+__MACOSX/
+
+#ignore files
 .DS_Store
-thesis.*
+.log
+.gz
+.tar.gz
+.bz2
