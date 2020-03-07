@@ -1,11 +1,13 @@
-#.gitignore
+# .gitignore CurriculumVitae
 
-#ignore directories
+# ignore directories
 __MACOSX/
 
-#ignore files
+# ignore files
 .DS_Store
-.log
-.gz
-.tar.gz
-.bz2
+*.log
+*.zip
+*.rar
+*.gz
+*.tar.gz
+*.bz2

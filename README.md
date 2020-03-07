@@ -1,1 +1,1 @@
-# PSCurriculumVitae
+# CurriculumVitae
