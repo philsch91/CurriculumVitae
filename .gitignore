@@ -11,3 +11,4 @@ __MACOSX/
 *.gz
 *.tar.gz
 *.bz2
+*.bak
