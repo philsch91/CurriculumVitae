@@ -11,6 +11,7 @@
 %----------------------------------------------------------------
 
 \thispagestyle{empty}
+%\chapter{Lebenslauf Philipp Schunker}
 
 \begin{comment}
 \begin{figure}[htbp]
@@ -104,78 +105,112 @@
 \end{longtabu}
 \end{comment}
 
-%\begin{longtable}{rl}
-\begin{longtabu} to \textwidth {>{\bfseries}X[r, 2] X[4]} %rl
-	\tableHeaderStyle
+\begin{longtable}{p{0.3\textwidth}|p{0.7\textwidth}}%{r|l}
+%\begin{longtabu} to \textwidth {>{\bfseries}X[r, 2] X[4]} %rl
+%\begin{longtblr}
+	%\tableHeaderStyle{Angaben zur Person} & \\
 	\large{Angaben zur Person} & \\
-        Vorname Nachname & Philipp Schunker \\
-        Staatsangehörigkeit & Österreich \\
-        Geburtsdatum & 18.09.1991 \\
-        Geschlecht & Männlich \\
-        E-Mail & philipp@schunker.at \\
-        Telefonnummer & +43 699 1946 7200 \\
+	Vorname Nachname & Philipp Schunker \\
+	Staatsangehörigkeit & Österreich \\
+	Geburtsdatum & 18.09.1991 \\
+	Geschlecht & Männlich \\
+	E-Mail & philipp@schunker.at \\
+	Telefonnummer & +43 699 1946 7200 \\
 	Gewünschtes Berufsfeld & Leitender Software-Entwickler und Software-Architekt \\
-	\tableHeaderStyle
+	\bottomrule
+	%\tableHeaderStyle
+	%\large{Berufserfahrung} & \\
 	\large{Berufserfahrung} & \\
 	Datum & November 2013 bis heute \\
-        Funktion & IT Systems Engineer \\
-        Arbeitgeber & Allianz Technology GmbH \\
-        Tätigkeitsbereich & IT Operations - Application and System Services \\ \bottomrule
-        %----
-        	Datum & September 2018 bis heute \\
-        Funktion & Frei- und nebenberuflicher Software-Entwickler \\
-        Tätigkeitsbereich & App-Entwicklung \\ 
+	Funktion & IT Systems Engineer \\
+	Arbeitgeber & Allianz Technology GmbH \\
+	Tätigkeitsbereich & IT Operations - Application and System Services \\ \bottomrule
+	%----
+	Datum & September 2018 bis heute \\
+	Funktion & Frei- und nebenberuflicher Software-Entwickler \\
+	Tätigkeitsbereich & App-Entwicklung \\
 	% & \begin{tabular}{cc}
-	Veröffentlichungen & \begin{tabular}{m{.2\textwidth} m{.2\textwidth} }
+	Veröffentlichungen, Produkte \& Dienste &
+	\begin{comment}
+	\begin{tabular}{m{.2\textwidth} m{.2\textwidth} }
+	%\begin{itemize}[nosep,leftmargin=1em]
+	%\item MapReminder
+	%\end{itemize}
 	MapReminder & \includegraphics[height=1.0cm]{images/iOS-MapReminder-1024} \\
 	\end{tabular} \\
-	& MapReminder ist eine leicht zu bedienende und im App Store verfügbare iOS App für ortsbezogene Erinnerungen \\ 
-	& Diverse Open Source Software-Projekte auf GitHub \\ \bottomrule
-        %----
-        Datum & Juni 2013 bis Oktober 2013 \\
-        Funktion & Junior Software Developer \\
-        Arbeitgeber & Österreichisches Bundesheer, Führungsunterstützungzentrum Abteilung FüUZ/Applikation \\
-        Tätigkeitsbereich & Applikationsentwicklung Intranet \\ \bottomrule
-        %----
-        	Datum & November 2011 bis Mai 2012 \\
-        Funktion & Programmierer im Präsenzdienst \\
-        Arbeitgeber & Österreichisches Bundesheer, Führungsunterstützungzentrum Abteilung FüUZ/Applikation \\
-        Tätigkeitsbereich & Automatisierung der Qualitätssicherung von Webapplikationen \\ \bottomrule
-        %----
-        	Datum & August 2010 bis September 2010 \\
-        Funktion & Urlaubsaushilfe \\
-        Arbeitgeber & Österreichische Post AG, Zustellbasis 1140 Wien \\
-        Tätigkeitsbereich & Post-Zusteller \\ \bottomrule
-        \newpage
-        %----
-        Datum & Juli 2009 bis August 2009 \\
-        Funktion & Berufspraktikum \\
-        Arbeitgeber & Audio Video Media Service GmbH \\
+	& MapReminder ist eine leicht zu bedienende und im App Store verfügbare iOS App für ortsbezogene Erinnerungen \\
+	& Diverse Open Source Software-Projekte auf GitHub \\
+	\end{comment}
+	\begin{tabular}{m{0.4\textwidth} m{0.02\textwidth} }
+	\begin{itemize}[nosep,leftmargin=1em]
+		\item MapReminder \newline
+		MapReminder ist eine leicht zu bedienende und im App Store verfügbare iOS App für ortsbezogene Erinnerungen
+	\end{itemize}
+	& \includegraphics[height=1.0cm]{images/MCTS-Icon-1024} \\
+	\begin{itemize}[nosep,leftmargin=1em]
+		\item LoadMeter \newline
+		ddddddd
+	\end{itemize}
+	\begin{itemize}[nosep,leftmargin=1em]
+		\item Open Source Software-Projekte auf GitHub \newline
+	\end{itemize}
+	\end{tabular} \\
+	\bottomrule
+	%----
+	Datum & Juni 2013 bis Oktober 2013 \\
+	Funktion & Junior Software Developer \\
+	Arbeitgeber & Österreichisches Bundesheer, Führungsunterstützungzentrum Abteilung FüUZ/Applikation \\
+	Tätigkeitsbereich & Applikationsentwicklung Intranet \\
+	\bottomrule
+	\newpage
+    %----
+	Datum & November 2011 bis Mai 2012 \\
+	Funktion & Programmierer im Präsenzdienst \\
+	Arbeitgeber & Österreichisches Bundesheer, Führungsunterstützungzentrum Abteilung FüUZ/Applikation \\
+	Tätigkeitsbereich & Automatisierung der Qualitätssicherung von Webapplikationen \\ \bottomrule
+	%\newpage
+	%----
+	Datum & August 2010 bis September 2010 \\
+	Funktion & Urlaubsaushilfe \\
+	Arbeitgeber & Österreichische Post AG, Zustellbasis 1140 Wien \\
+	Tätigkeitsbereich & Post-Zusteller \\ \bottomrule
+	%\newpage
+    %----
+	Datum & Juli 2009 bis August 2009 \\
+	Funktion & Berufspraktikum \\
+	Arbeitgeber & Audio Video Media Service GmbH \\
 	Tätigkeiten und Zuständigkeiten &
 	%\tabitem Service, Wartung und Instandsetzung von Computerhardware \newline
 	%Service, Wartung und Instandsetzung von Computerhardware \newline
 	%\hangbullet{Entwicklung und Betreuung der intern genutzten Software und IT-Infrastruktur} \\
 	%Entwicklung und Betreuung der intern genutzten Software und IT-Infrastruktur \\
 	%\compress
+	\begin{tabular} {m{.4\textwidth} m{0.05\textwidth} }
 	\begin{itemize}[nosep,leftmargin=1em] 
 	\item Service, Wartung und Instandsetzung von Computerhardware
-    	\item Entwicklung und Betreuung der intern genutzten Software und IT-Infrastruktur
-	\end{itemize} \\
-        Tätigkeitsbereich & Informations- und Kommunikationstechnik \\ \bottomrule
-        %----
-        Datum & Juli 2007 bis August 2007 \\
-        Funktion & Berufspraktikum \\
-        Arbeitgeber & Audio Video Media Service GmbH \\
+    \item Entwicklung und Betreuung der intern genutzten Software und IT-Infrastruktur
+	\end{itemize}
+	\end{tabular}
+	\\
+	Tätigkeitsbereich & Informations- und Kommunikationstechnik \\
+	\bottomrule
+    %----
+	Datum & Juli 2007 bis August 2007 \\
+	Funktion & Berufspraktikum \\
+	Arbeitgeber & Audio Video Media Service GmbH \\
 	Tätigkeiten und Zuständigkeiten &
 	%\tabitem Service, Wartung und Instandsetzung von Computerhardware \newline
 	%\textbullet{Entwicklung und Betreuung der intern genutzten Software und IT-Infrastruktur} \\
 	%\compress
+	\begin{tabular} {m{.4\textwidth} m{0.05\textwidth} }
 	\begin{itemize}[nosep,leftmargin=1em]
 	\item Service, Wartung und Instandsetzung von Computerhardware
-    	\item Entwicklung und Betreuung der intern genutzten Software und IT-Infrastruktur
-	\end{itemize} \\
-        Tätigkeitsbereich & Informations- und Kommunikationstechnik \\ \bottomrule
-        	\tableHeaderStyle
+	\item Entwicklung und Betreuung der intern genutzten Software und IT-Infrastruktur
+	\end{itemize}
+	\end{tabular}
+	\\
+	Tätigkeitsbereich & Informations- und Kommunikationstechnik \\ \bottomrule
+	%\tableHeaderStyle
 	\large{Schul- und Berufausbildung} & \\
 	%----
     Datum & September 2016 bis September 2019 \\
@@ -183,28 +218,35 @@
     Bachelorstudiengang Informationstechnologie und Telekommunikationstechnik \\
     Bezeichnung der erworbenen Qualifikation & Bachelor of Science in Engineering (BSc) \\
     Publikationen &
+    \begin{tabular} {m{.4\textwidth} m{0.05\textwidth} }
     \begin{itemize}[nosep,leftmargin=1em]
 	\item Bachelorarbeit 1: Pfadsuche basierend auf Reinforcement Learning und Monte-Carlo Tree Search
 	\item Bachelorarbeit 2: Entscheidungsfindung basierend auf der Monte-Carlo Tree Search und künstlichen neuronalen Netzen
-    	\item Telekommunikation: Car-to-Car Communication 
+    \item Telekommunikation: Car-to-Car Communication
 	%\scriptsize{\url{https://schunker-my.sharepoint.com/personal/philipp_schunker_at/_layouts/15/onedrive.aspx?id=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen\%2FCar2CarCommuncation\%2Epdf&parent=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen}}
-	\item Internationalisierung@Home: What programming and logic have in common and how to write error-free software 
+	\item Internationalisierung@Home: What programming and logic have in common and how to write error-free software
 	%\scriptsize{\url{https://schunker-my.sharepoint.com/personal/philipp_schunker_at/_layouts/15/onedrive.aspx?id=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen\%2FFunctionalProgramming\%2Epdf&parent=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen}}
-	\end{itemize} \\ 
-	Projekte & 
-	\begin{tabular} {m{.4\textwidth} m{0.05\textwidth} }
-	\begin{itemize}[nosep,leftmargin=0.5em,topsep=10pt]
-		\item VienNav (MTCSNav) Praktische Umsetzung für die Verifizierung und Auswertung der in der Bachelorarbeit 1 dargelegten Theorie
+	\end{itemize}
+	\end{tabular}
+	\\
+	%\newpage
+	Projekte & %\\
+	\begin{tabular}{m{0.4\textwidth} m{0.02\textwidth} }
+	%\begin{itemize}[nosep,leftmargin=0.5em,topsep=10pt]
+	\begin{itemize}[nosep,leftmargin=1em]
+	\item VienNav (MTCSNav) \newline
+	Praktische Umsetzung für die Verifizierung und Auswertung der in der Bachelorarbeit 1 dargelegten Theorie
 	\end{itemize}
 	& \includegraphics[height=1.0cm]{images/MCTS-Icon-1024} \\
-	\begin{itemize}[nosep,leftmargin=0.5em]
-		\item MLChess Praktische Umsetzung für die Verifizierung und Auswertung der in der Bachelorarbeit 2 dargelegten Theorie
+	\begin{itemize}[nosep,leftmargin=1em]
+	\item MLChess \newline
+	Praktische Umsetzung für die Verifizierung und Auswertung der in der Bachelorarbeit 2 dargelegten Theorie
 	\end{itemize}
  	& \includegraphics[height=1.0cm]{images/MLChess-Icon-1024} \\
 	\end{tabular} \\
 	%& Praktische Umsetzung für die Verifizierung und Auswertung der in der Bachelorarbeit 1 dargelegten Theorie \\
 	\bottomrule
-	\newpage
+	%\newpage
     %----
     Datum & Oktober 2012 bis Mai 2013 \\
     Name und Art der Bildungs- oder Ausbildungseinrichtung & FH des bfi Wien Bachelorstudiengang Projektmanagement und IT \\ \bottomrule
@@ -245,16 +287,19 @@
 	\tabitem Teamfähig \newline
 	\tabitem Motiviert \newline
 	\tabitem Freundlich \newline
-	\tabitem Objektiv \\ \bottomrule
+	\tabitem Objektiv \\
+	\bottomrule
 	%---
 	Organisatorische Fähigkeiten und Kompetenzen &
 	\tabitem Agile Scrum Foundation Zertifizierung \newline
 	\tabitem Ziel- und leistungsorientierte Arbeitsweise \newline
 	\tabitem Körperliche und geistige Belastbarkeit \newline
 	\tabitem Solides und kompetentes Auftreten \newline
-	\tabitem Zuverlässigkeit, Engagement und Flexibilität \\ \bottomrule
+	\tabitem Zuverlässigkeit, Engagement und Flexibilität \\
+	\bottomrule
 	%---
 	Technische Fähigkeiten und Kompetenzen &
+	\begin{tabular} {m{.4\textwidth} m{0.05\textwidth} }
 	\begin{itemize}[nosep,leftmargin=1em]
 	\item Programmierung von Software in imperativen und objektorientierten Sprachen: C, Java, C\#, Objective-C, Swift
 	\item Erfahrung in der Entwicklung von Software sowie im Aufbau und Betrieb von IT-Dienstleistungen
@@ -267,7 +312,10 @@
 	\item Datenbanksysteme: Aufbau, Funktionsweise, Anbindung und Entwicklung mit SQL
 	\item Web-Technologien: Entwicklung mit statischen und dynamischen Technologien wie HTML, CSS, php, Javascript und React
 	\item Telekommunikation und IoT: GSM, UMTS, LTE, 5G, Modulations- und Übertragungsverfahren %\\ \bottomrule
-	\end{itemize} \\
+	\end{itemize}
+	\end{tabular}
+	\\
+	\bottomrule
 	Künstlerische Fähigkeiten und Kompetenzen &
 	\tabitem Photographie \newline
 	\tabitem Bildbearbeitung \\ \bottomrule
@@ -283,9 +331,10 @@
 	\small{\url{https://testflight.apple.com/join/kxyfo2nV}} \newline
 	GitHub Account und Projekte \newline
 	\small{\url{https://github.com/philsch91}} \newline
-	Car-to-Car Communication \newline
-	\small{\url{https://schunker-my.sharepoint.com/personal/philipp_schunker_at/_layouts/15/onedrive.aspx?id=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen\%2FCar2CarCommuncation\%2Epdf&parent=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen}} \newline
-	What programming and logic have in common and how to write error-free software \newline
-	\small{\url{https://schunker-my.sharepoint.com/personal/philipp_schunker_at/_layouts/15/onedrive.aspx?id=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen\%2FFunctionalProgramming\%2Epdf&parent=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen}} \newline
-%\end{longtable}
-\end{longtabu}
+	%Car-to-Car Communication \newline
+	%\small{\url{https://schunker-my.sharepoint.com/personal/philipp_schunker_at/_layouts/15/onedrive.aspx?id=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen\%2FCar2CarCommuncation\%2Epdf&parent=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen}} \newline
+	%What programming and logic have in common and how to write error-free software \newline
+	%\small{\url{https://schunker-my.sharepoint.com/personal/philipp_schunker_at/_layouts/15/onedrive.aspx?id=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen\%2FFunctionalProgramming\%2Epdf&parent=\%2Fpersonal\%2Fphilipp\%5Fschunker\%5Fat\%2FDocuments\%2FAnlagen}} \newline
+\end{longtable}
+%\end{longtabu}
+%\end{longtblr}
